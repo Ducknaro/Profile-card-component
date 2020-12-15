@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300&display=swap');
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+
+ position: relative;
+ background: url('profile-card-component-main/images/bg-pattern-top.svg') no-repeat, url('profile-card-component-main/images/bg-pattern-bottom.svg'), #19a2ae;
+ background-position: top -550px left -280px, bottom -660px right -220px;
+
+}
+
+
+.container{
+ position: absolute;
+ top:50%;
+ left:50%;
+ transform: translate(-50%,40%);
+ background-color: white;
+ max-width: 355px;
+ display:flex;
+ justify-content: center;
+ align-items: center;
+ flex-direction: column;
+ min-height:349px;
+ border-radius:25px;
+ font-family: 'Kumbh Sans', sans-serif;
+ background: url('./profile-card-component-main/images/bg-pattern-card.svg') no-repeat top/100% 36%, white;
+
+}
+
+
+.container .photo{
+ margin-top:4rem;
+}
+
+
+
+
+.container .photo img{
+ border-radius:50%;
+ border: solid white 6px;
+
+}
+.container #london {
+ color:hsl(227, 10%, 46%);
+ font-size:15px;
+
+}
+
+.container .text-photo{
+ margin-top:1rem;
+}
+
+.container .text-photo h4{
+ font-weight: bold;
+ font-size: 18px;
+}
+
+
+.container .text-photo h4 > span{
+ color:hsl(227, 10%, 46%);
+}
+
+
+
+.numbers{
+ border-top: 1px solid gray;
+ display: flex;
+ flex-direction:row;
+ margin-top:3rem;
+ padding: 1rem;
+
+
+}
+
+.numbers .box{
+ margin-left: 3rem;
+}
+
+.numbers .big-names{
+ font-size: 18px;
+ font-weight: 700;
+}
+
+
+.numbers .names{
+ font-size: 10px;
+ color:hsl(227, 10%, 46%);
+
+}
+
+.box3{
+ margin-right: 3rem;
+}
+
+
+footer{
+ position: absolute;
+ top:60%;
+ left: 50%;
+ transform: translate(-50%,1500%);
+}
+
+footer p{
+ text-align: center;
+}
+
+a{
+ text-decoration: none;
+ color:white;
+}
+
+a:hover{
+ text-decoration: underline;
+}
+
+
+
+@media all and (max-width:500px){
+ footer{
+  transform: translate(-50%,1500%);
+ }
+ 
+}
+
+@media all and (max-width:400px){
+ 
+ footer{
+  width: 90%;
+  left: 70%;
+  transform: translate(-70%,1500%);
+
+ }
+ 
+ 
+}
+
+
+
+
